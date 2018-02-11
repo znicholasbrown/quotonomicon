@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Quotonomicon",
+    "version": "1.0",
+    "description": "Save your favorite quotes!",
+    "applications": {
+        "gecko": {
+            "id": "quoto@quotonomicon.com"
+        }
+    },
+    "icons": {
+        "48": "icons/quoto.svg",
+        "96": "icons/quoto.svg"
+    },
+    "browser_action": {
+        "default_icon": "icons/quoto.svg",
+        "default_title": "Quotonomicon"
+    },
+    "sidebar_action": {
+        "default_title": "Quotonomicon",
+        "default_panel": "sidebar/quoto.html",
+        "default_icon": "icons/quoto.svg"
+    },
+    "background": {
+        "scripts": ["quoto.js"]
+    },
+    "permissions": [
+        "contextMenus"
+    ]
+}
